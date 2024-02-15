@@ -1,15 +1,12 @@
 student = {}
-student["name"] =  "Garrett Kembel"
-student ["age"]=  22
-student ["major 1"]=  "Supply Chain Management"
-student ["major 2"]= "Management Information Systems"
-student ["hobbies"]= ["Music", "Lego", "Sports", "Gym"]
-student ["state"]=  "Texas"
+student["Name"] =  "Garrett Kembel"
+student ["Age"]=  22
+student ["Major 1"]=  "Supply Chain Management"
+student ["Major 2"]= "Management Information Systems"
+student ["Hobbies"]= ["Music", "Lego", "Sports", "Gym"]
+student ["State"]=  "Texas"
 
-student ["age"] += 1
-
-for i in student ['hobbies']:
-    print(i)
+student ["Age"] += 1
 
 for k, v in student.items():
     print (f" {k}: {v}")
