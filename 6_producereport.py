@@ -207,3 +207,18 @@ ProduceDictionary={
     }
 }
 
+
+
+for k, v in ProduceDictionary.items():
+     total = v['cost'] * v['amt_sold']
+     rounded_total = round(total, 2)
+     if rounded_total != v['total']:
+          print('\n')
+          print ('The totals do not match up:')
+          print (f'Produce Name: {k}')
+          print (f'Calculated Total: {total:.2f}')
+          print(f'Stated Total: {v["total"]}')
+          difference = total - v['total']
+          print(f'Difference: {difference:.2f}')
+    
+
