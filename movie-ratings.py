@@ -21,7 +21,6 @@ def recommended_movie (movie_ratings, movie_title):
                 print('\n')
                 for movie_ratings, movie_title in movie_ratings.items():
                     if movie_title >= 8:
-                        
                         print (movie_ratings)
                         print('\n')
     else:
