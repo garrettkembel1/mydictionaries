@@ -3,7 +3,7 @@ movie_ratings = {
     "Last Airbender": 2,
     "Devil Wears Prada": 6,
     "Into the Spiderverse": 9.5,
-    "Avengers": 8
+    "Days of Thunder": 8
 }
 print('\n')
 movie_title = input('Please input a movie title: ')
@@ -19,18 +19,19 @@ def recommended_movie (movie_ratings, movie_title):
                 print('\n')
                 print(f'Movies over a rating of 8 are: ')
                 print('\n')
-                for k, v in movie_ratings.items():
-                    if v >= 8:
+                for movie_ratings, movie_title in movie_ratings.items():
+                    if movie_title >= 8:
                         
-                        print (k)
+                        print (movie_ratings)
                         print('\n')
     else:
         print('Movie is not in database')
+        print('\n')
         print ('Movies we recommend are: ')
         print('\n') 
-        for k, v in movie_ratings.items():
-            if v >= 8:
-                print (k)
+        for movie_ratings, movie_title in movie_ratings.items():
+            if movie_title >= 8:
+                print (movie_ratings)
                 print('\n')
 
             
